@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\img\bangkok.jpeg" />
+    <None Include="wwwroot\img\blog-pic.jpeg" />
+    <None Include="wwwroot\img\bon-appetit-logo.jpg" />
+    <None Include="wwwroot\img\choc-muffins.jpg" />
+    <None Include="wwwroot\img\dessert-pic.jpeg" />
+    <None Include="wwwroot\img\landing-pic.jpeg" />
+    <None Include="wwwroot\img\omlette.jpeg" />
+    <None Include="wwwroot\img\oranges.jpeg" />
+    <None Include="wwwroot\js\up-button.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Content\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CSPT.Data\CSPT.Data.csproj" />
+    <ProjectReference Include="..\CSPT.Mongo\CSPT.Mongo.csproj" />
+  </ItemGroup>
+
+</Project>

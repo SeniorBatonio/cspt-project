@@ -1,0 +1,101 @@
+﻿@model CSPT.Models.LandingViewModel
+@{
+    ViewData["Title"] = "Bon Appetit!";
+}
+
+    <div class="container">
+        <section>
+            <div class="row showcase-row align-items-center">
+                <div class="col-sm-12 col-md-6 text-center">
+                    <img class="img-fluid rounded" src="img/dessert-pic.jpeg" style="width:75%">
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="center-content">
+                        <div class="showcase-writing-outer">
+                            <div class="showcase-writing writing">
+                                <h3>Restaurant reviews, Baking and More</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container" id="#AboutMe">
+        <section>
+            <div class="row justify-content-center">
+                <div class="col">
+                    <div class="center-content">
+                        <h4 class="sub-heading">About Me</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                @foreach (var about in Model.AboutMe)
+                {
+                    <div class="col-md-6">
+                        <p>@about</p>
+                    </div>
+                }
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-2 d-flex justify-content-center"><a class="btn-more" href="#">Read More</a></div>
+            </div>
+            <section>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <section>  <img class="img-responsive" src="img/choc-muffins.jpg" style="width:100%;"> </section>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <section>
+            <div class="row showcase-row align-items-center">
+                <div class="col-sm-12 col-md-6">
+                    <div class="center-content">
+                        <div class="showcase-writing-outer">
+                            <div class="showcase-writing writing">
+                                <h3>From the blog</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="col-sm-12 col-md-6 text-center">
+                    <img class="img-fluid rounded" src="img/blog-pic.jpeg" style="width:75%">
+                </div>
+            </div>
+            <div class="row">
+                @foreach (var post in Model.Posts)
+                {
+                    <div class="col-md-4 col-xs-12">
+                        <img class="img-fluid rounded thumbnail" src="@post.ImageUrl" style="width:100%;">
+                        <h3 class="writing">@post.Title</h3>
+                        <p>@post.Content</p>
+                        <div class="center-content"><a href="#" class="btn-more">Learn More</a></div>
+                    </div>
+                }
+            </div>
+        </section>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col footer d-flex flex-column align-items-center justify-content-center">
+                <img class="logo" src="img/bon-appetit-logo.jpg">
+                <h3>Be on a delicious rhythm</h3>
+                <p>Share</p>
+                <div class="social">
+                    <a href="#"><span><i class="fa fa-facebook" aria-hidden="true"></i></span></a>
+                    <a href="#"><span><i class="fa fa-twitter" aria-hidden="true"></i></span></a>
+                    <a href="#"><span><i class="fa fa-google" aria-hidden="true"></i></span></a>
+                    <a href="#"><span><i class="fa fa-pinterest" aria-hidden="true"></i></span></a>
+                    <a href="#"><span><i class="fa fa-instagram" aria-hidden="true"></i></span></a>
+                </div>
+                <hr>
+                <p><small>Copyright Lorem ipsum dolor sit amet, consectetur adipisicing elit.</small></p>
+            </div>
+        </div>
+    </div>

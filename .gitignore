@@ -3,3 +3,13 @@
 ################################################################################
 
 /CSPT/bin/Debug/netcoreapp3.1
+/.vs/CSPT
+/CSPT/obj
+/CSPT/CSPT.csproj.user
+/CSPT.Data/bin/Debug/netcoreapp3.1
+/CSPT.Data/obj
+/CSPT.InitMongo/.vs/CSPT.InitMongo
+/CSPT.InitMongo/CSPT.InitMongo/bin/Debug/netcoreapp3.1
+/CSPT.InitMongo/CSPT.InitMongo/obj
+/CSPT.Mongo/bin/Debug/netcoreapp3.1
+/CSPT.Mongo/obj
